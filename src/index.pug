@@ -1,17 +1,12 @@
-doctype html
-html(lang="en")
-	head
-		title Welcome to Parceljs learning
-		link(rel="stylesheet" href="./assets/css/app.scss")
-		script(type="module" src="./assets/js/app.js")
-	body
-		div.container
-			h1.text-center.text-danger Hello from Pug!
-			p
-				Pug is a terse and simple templating language with a
-				strong focus on performance and powerful features.
-			div.row.rounded 
-				div.col-md-4
-					ul.list-group
-						each val in ["item 1", "item", 3, 4, 5]
-							li.list-group-item= val
+extends layouts/app.pug
+
+block content
+	h1.text-center.text-danger Hello from Pug!
+	p
+		Pug is a terse and simple templating language with a
+		strong focus on performance and powerful features.
+	div.row.rounded 
+		div.col-md-4
+			ul.list-group
+				each val in ["item 1", "item", 3, 4, 5]
+					li.list-group-item= val
