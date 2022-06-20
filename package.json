@@ -2,21 +2,25 @@
   "name": "frontend_training",
   "version": "1.0.0",
   "description": "",
-  "source": "src/index.html",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build"
+    "start": "parcel src/*.pug",
+    "build": "parcel build --public-url ./ src/*.pug"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@popperjs/core": "^2.11.5",
     "bootstrap": "5.2.0-beta1",
+    "lodash": "^4.17.21",
     "pug": "^3.0.2",
     "sass": "^1.52.3"
   },
   "devDependencies": {
+    "@parcel/compressor-brotli": "^2.6.1",
+    "@parcel/compressor-gzip": "^2.6.1",
+    "@parcel/transformer-pug": "^2.6.1",
     "@parcel/transformer-sass": "^2.6.1",
-    "parcel": "^2.6.1"
+    "parcel": "^2.6.1",
+    "sharp": "^0.29.3"
   }
 }
