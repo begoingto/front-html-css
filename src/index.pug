@@ -7,6 +7,10 @@ block content
 		strong focus on performance and powerful features.
 	div.row.rounded 
 		div.col-md-4
-			ul.list-group
-				each val in ["item 1", "item", 3, 4, 5]
-					li.list-group-item= val
+			include components/list.pug
+		div.col-md-4
+			include components/list.pug
+		div.col-md-4
+			include components/list.pug
+	section.my-3 
+		h2.text-center Contact Us

@@ -18,6 +18,7 @@
   "devDependencies": {
     "@parcel/compressor-brotli": "^2.6.1",
     "@parcel/compressor-gzip": "^2.6.1",
+    "@parcel/transformer-graphql": "^2.6.1",
     "@parcel/transformer-pug": "^2.6.1",
     "@parcel/transformer-sass": "^2.6.1",
     "parcel": "^2.6.1",

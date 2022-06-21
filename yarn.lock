@@ -549,6 +549,15 @@
     "browserslist" "^4.6.6"
     "nullthrows" "^1.1.1"
 
+"@parcel/transformer-graphql@^2.6.1":
+  "integrity" "sha512-/qsCAr6GIn0fa3YEaMSQZdEHYih2znhldUNWSZnGmBuv10Ud07sywUANMW6IsLgAF07P2pRuBggibRclPJI/UA=="
+  "resolved" "https://registry.npmjs.org/@parcel/transformer-graphql/-/transformer-graphql-2.6.1.tgz"
+  "version" "2.6.1"
+  dependencies:
+    "@parcel/plugin" "2.6.1"
+    "graphql" "^15.0.0"
+    "graphql-import-macro" "^1.0.0"
+
 "@parcel/transformer-html@2.6.1":
   "integrity" "sha512-GpHXG8v1U0heCbNVQ8gmnJJqAkceKROvj7BreR7UokXP+Frr+ydKKumbVLK7kjwwlagy85VMnIMaFG8/zZ4lqA=="
   "resolved" "https://registry.npmjs.org/@parcel/transformer-html/-/transformer-html-2.6.1.tgz"
@@ -1192,6 +1201,18 @@
   "version" "13.15.0"
   dependencies:
     "type-fest" "^0.20.2"
+
+"graphql-import-macro@^1.0.0":
+  "integrity" "sha512-YK4g6iP60H++MpP93tb0VwOg7aM5iIC0hdSQKTrEDANeLWf0KFAT9dwlBeMDrhY+jcW7qsAEDtaw58cgVnQXAw=="
+  "resolved" "https://registry.npmjs.org/graphql-import-macro/-/graphql-import-macro-1.0.0.tgz"
+  "version" "1.0.0"
+  dependencies:
+    "graphql" "^15.0.0"
+
+"graphql@^15.0.0":
+  "integrity" "sha512-5gghUc24tP9HRznNpV2+FIoq3xKkj5dTQqf4v0CpdPbFVwFkWoxOM+o+2OC9ZSvjEMTjfmG9QT+gcvggTwW1zw=="
+  "resolved" "https://registry.npmjs.org/graphql/-/graphql-15.8.0.tgz"
+  "version" "15.8.0"
 
 "has-flag@^3.0.0":
   "integrity" "sha512-sKJf1+ceQBr4SMkvQnBDNDtf4TXpVhVGateu0t918bl30FnbE2m4vNLX+VWe/dpjlb+HugGYzW7uQXH98HPEYw=="
