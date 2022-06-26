@@ -1,7 +1,17 @@
 extends layouts/app.pug
 
+//- Internal css
+block css 
+	style.
+		h1{
+			color: red;
+		}
+
 block content
-	h1 Hello from Pug!
+	//- 
+		Inline css
+
+	h1(style={color:'green'}) Hello from Pug!
 	p
 		Pug is a terse and simple templating language with a 
 		strong focus on performance and powerful features.
