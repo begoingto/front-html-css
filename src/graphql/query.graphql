@@ -1,9 +1,0 @@
-{
-  posts(first: 15) {
-    data {
-      id
-      title
-      keyword
-    }
-  }
-}

@@ -1,17 +1,33 @@
 extends layouts/app.pug
 
 //- Internal css
-block css 
-	style.
-		h1{
-			color: red;
-		}
+	block css 
+		style.
+			h1{
+				color: red;
+			}
 
 block content
-	//- 
-		Inline css
-
-	h1(style={color:'green'}) Hello from Pug!
-	p
-		Pug is a terse and simple templating language with a 
-		strong focus on performance and powerful features.
+	.header
+		.header-img.position-relative 
+			.container.d-flex.justify-content-end.align-items-center.pt-4
+				img.me-4(src="./assets/images/logo.png", alt="logo", height="60px")
+				div.menu-icon.object-hover 
+					i.fa-solid.fa-bars
+			.container.h-100.d-flex.align-items-center.justify-content-end
+				.header-content 
+					h1.text-uppercase.text-end The digital revolution is far more significant 
+					h6.text-uppercase.text-end than the invention of writing or even of printing. – Douglas Engelbart, inventor of the graphical interface and the mouse
+	
+	h3.text-center.p-4.text-capitalize.my-3 
+		| What We 
+		span.text-yellow Offer
+	.container 
+		.row 
+			.col-md-6
+				.shadow.rounded-4.p-3
+					p Content 1
+			.col-md-6
+				.shadow.rounded-4.p-3
+					p Content 2
+	div(style="height:800px")

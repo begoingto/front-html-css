@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.1.1",
     "@popperjs/core": "^2.11.5",
     "bootstrap": "5.2.0-beta1",
     "lodash": "^4.17.21",
@@ -18,7 +19,6 @@
   "devDependencies": {
     "@parcel/compressor-brotli": "^2.6.1",
     "@parcel/compressor-gzip": "^2.6.1",
-    "@parcel/transformer-graphql": "^2.6.1",
     "@parcel/transformer-pug": "^2.6.1",
     "@parcel/transformer-sass": "^2.6.1",
     "parcel": "^2.6.1",

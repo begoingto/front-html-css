@@ -1,4 +1,43 @@
-h1{
-    border: 5px dashed green;
-    color: palevioletred;
+@import "_variable";
+@import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap');
+
+*{
+    font-family: 'Lato';
+}
+
+.header{
+    background-color: $header;
+
+    .header-img{
+        background-image: url('../images/banner-home.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 45rem;
+        width: 100%;
+    }
+
+    .logo{
+        margin-right: 15px;
+    }
+
+    .menu-icon{
+        i{
+            font-size: 25px;
+        }
+    }
+
+    .header-content{
+        max-width: 400px;
+    }
+}
+
+.text-yellow{
+    color: $yellow;
+}
+.object-hover{
+    &:hover{
+        cursor: pointer;
+    }
 }
