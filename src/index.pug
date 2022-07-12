@@ -15,19 +15,26 @@ block content
 				div.menu-icon.object-hover 
 					i.fa-solid.fa-bars
 			.container.h-100.d-flex.align-items-center.justify-content-end
-				.header-content 
-					h1.text-uppercase.text-end The digital revolution is far more significant 
-					h6.text-uppercase.text-end than the invention of writing or even of printing. – Douglas Engelbart, inventor of the graphical interface and the mouse
-	
+				.header-content.text-end 
+					h1.text-uppercase The digital revolution is far more significant 
+					h6.text-uppercase than the invention of writing or even of printing. – Douglas Engelbart, inventor of the graphical interface and the mouse
+
 	h3.text-center.p-4.text-capitalize.my-3 
 		| What We 
 		span.text-yellow Offer
 	.container 
 		.row 
-			.col-md-6
-				.shadow.rounded-4.p-3
-					p Content 1
-			.col-md-6
-				.shadow.rounded-4.p-3
-					p Content 2
-	div(style="height:800px")
+			- var n = 0
+			while n < 10
+				.col-md-6(class="my-3")
+					.shadow.rounded-4.p-3
+						.row.p-0
+							.col-sm-6
+								img.img-fluid(src="./assets/images/items/1.png", alt="1")
+							.col-sm-6
+								.h-100.d-flex.flex-column
+									h3.mb-auto.fw-bold Logo Design#{n++}
+									p Need a quality, custom logo? Our team will create a stunning, original design for you that will make your business stand out from the ...
+									a.btn.btn-secondary.text-info(href="#") 
+										| Learn More
+										i.fa-solid.fa-arrow-right-long.ms-2
